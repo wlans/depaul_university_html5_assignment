@@ -1,0 +1,28 @@
+body {
+	background-color: #000000
+}
+
+nav {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute; 
+}
+
+
+nav ul li {
+	float: left;
+	margin-right: 14px;
+}
+
+li {
+	display:block;
+	color: #ffffff
+}
+
+.whitetextright {
+	text-align: right;
+	padding-top: 50px;
+	margin-top: 4px;
+}
+
