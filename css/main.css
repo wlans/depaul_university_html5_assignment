@@ -19,19 +19,19 @@ nav ul li {
 	margin-right: 14px;
 }
 
-li {
+li a {
 	display:block;
 	color: #ffffff
 }
 
 .whitetextright {
 	text-align: right;
-	padding-top: 150px;
+	padding-top: 160px;
 	padding-right: 30px;
 	margin-top: 4px;
 }
 
 div#main_container {
 	background-image: url("../images/chicago_background.jpg");
-	height: 500px; 
+	height: 600px; 
 }
