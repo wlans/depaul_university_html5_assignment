@@ -1,34 +1,27 @@
-@import url("../bootstrap/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js");
 
 body {
-	background-color: #000000;
-	background-size: cover;
+	background-color: black;
+}
+
+div#maincontainer {
+	 background-size: cover;
+	 background-image: url("../images/chicago_background.jpg");
+
+	
 }
 
 div#mainbar {
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 100%;
+    text-align: center;
     color: #ffffff;
-    background-color: rgba(0,0,0,0.4);
     height: auto;
-    min-height: 60px;
-
+   
 }
 
-a:hover {
-    text-decoration: none;
-}
-
-div#mainbar a {
-		color: #ffffff;
-		display: block;
-}
-
-div#mainbar a:hover {
-		text-decoration: underline;
-		border-bottom: red;
-}
 
 div#middle_menu a {
     color: red;
@@ -43,15 +36,68 @@ li a {
 
 
 .whitetextright {
-	padding-top: 160px;
+	padding-top: 60px;
 	margin-top: 3px;
 	display: block;
+	color: #ffffff;
 
 }
 
-body {
-	background-image: url("../images/chicago_background.jpg");
 
+#scrolldown {
+	color: white;
+	height: auto;
+	position:fixed;
+  bottom:0px;
+  left: 50%; /* centers #box in its containing element */
+}
+
+/*Nav Bar*/ 
+
+.mynavbar {
+	text-align:center;
+}
+.mynavbar .nav {
+	float:none;
+}
+.mynavbar .nav li {
+	display:inline-block;
+	float:none;
+	margin:0 40px;
+	vertical-align:middle;
+}
+.mynavbar .nav li a {
+	background:black;
+	color:#fff;
+}
+.mynavbar .nav li a:hover {
+	text-decoration: underline;
+}
+.mynavbar .nav li.mylogo a, .mynavbar .nav li.mylogo a:hover {
+	background:transparent;
+	max-width:150px;
+}
+.mynavbar .nav li.mylogo a img {
+	width:100%;
+	height:auto;
+	vertical-align:middle;
+	display:inline-block;
+}
+.navbar-brand {
+	display:none
+}
+ @media screen and (max-width:768px) {
+.mynavbar .nav li {
+	display:block;
+	margin:0
+}
+.mynavbar .nav li a {
+	border-radius:0;
+	display:block;
+	text-align: right;
+}
+.mynavbar li.mylogo {
+	display:none
 }
 
 
