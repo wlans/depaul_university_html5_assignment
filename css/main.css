@@ -6,24 +6,75 @@ body {
 	background-color: black;
 }
 
-div#maincontainer {
-	 background-size: cover;
-	 background-image: url("../images/chicago_background.jpg");
-
-	
+.chicagotextleft{
+	position:absolute;
+	z-index: 1;
+	top:120px;
+	left:100px;
+	color: #ffffff;
+	font-weight: bold;
 }
 
-div#mainbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    color: #ffffff;
-    height: auto;
-   
+.righttextred {
+	color: red;
+	font-style: bold;
+}
+
+.dash {
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+#chicagotextright {
+	color: #ffffff;
+	position:absolute;
+	z-index: 1;
+	top:120px;
+	right:100px;
+	text-align: right;
+	font-size: 14pt;
+}
+
+#chicagotextright > li {
+	display: block;
+}
+
+.marqueeimage {
+background-size:cover;
+width: 100%;
+margin-bottom: 10px;
+padding-bottom: 50x;
+
+}
+
+div#newscontainer {
+	width: 80%;
+ 	height: auto;
+ 	position: relative;
+ 	left: 15%;
+
+}
+
+.newsarticle {
+	float: left;
+	width: 300px;
+	padding: 20px;
 }
 
 
-div#middle_menu a {
+
+}
+
+.marqueecontainer {
+	position: relative;
+	z-index: -4;
+	width: 100%;
+
+}
+
+
+#middlemenu {
     color: red;
 }
 
@@ -35,43 +86,59 @@ li a {
 }
 
 
-.whitetextright {
-	padding-top: 60px;
-	margin-top: 3px;
-	display: block;
-	color: #ffffff;
-
-}
 
 
 #scrolldown {
-	color: white;
-	height: auto;
-	position:fixed;
+	color: black;
+	height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: white;
+	font-weight: bold;
+	position:absolute;
   bottom:0px;
-  left: 50%; /* centers #box in its containing element */
+  z-index: 1;
+  left: 48%; /* centers #box in its containing element */
 }
 
 /*Nav Bar*/ 
 
+
 .mynavbar {
 	text-align:center;
+
+
 }
 .mynavbar .nav {
 	float:none;
+	height: auto;
+	z-index: 2;
+
 }
+
 .mynavbar .nav li {
 	display:inline-block;
 	float:none;
 	margin:0 40px;
+	margin-bottom: -30px;
 	vertical-align:middle;
+	height: auto;
+	z-index: 500;
 }
 .mynavbar .nav li a {
-	background:black;
+	background: black;
+	color:#fff;
+	width: 100%;
+	z-index: 500;
+}
+
+.mynavbar .nav li a span {
 	color:#fff;
 }
+
 .mynavbar .nav li a:hover {
 	text-decoration: underline;
+	color: red;
 }
 .mynavbar .nav li.mylogo a, .mynavbar .nav li.mylogo a:hover {
 	background:transparent;
@@ -100,4 +167,23 @@ li a {
 	display:none
 }
 
+.chicagotextleft {
+	position:relative;
+	z-index: 1;
+	top:0px;
+	left:	0px;
+	text-align: center;
+}
 
+ul.chicagotextright {
+	display: none;
+	
+}
+
+.marqueecontainer {
+	display: none;
+
+}
+
+
+}
