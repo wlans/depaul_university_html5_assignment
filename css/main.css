@@ -6,7 +6,7 @@ body {
 	background-color: black;
 }
 
-.chicagotextleft{
+#chicagotextleft{
 	position:absolute;
 	z-index: 1;
 	top:120px;
